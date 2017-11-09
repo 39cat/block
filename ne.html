@@ -1,0 +1,68 @@
+<html>
+<head>
+
+<style>
+  .gamediv{
+      width:375px;
+	  height:567px;
+	  border:1px black solid ;
+	  margin: 0 auto;
+	  overflow:hidden;
+  }
+  
+  .game{
+      position:relative;
+	  
+  }
+  .game div{
+      
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div class = 'gamediv' id = "gamediv">
+  <div class = "game" id = "game"> 
+  </div>
+</div>
+
+
+</body>
+
+
+<script type="text/javascript">
+
+var game = document.getElementById('game');
+var i = 0;
+ function f(){
+  
+ var   block = document.createElement('div');
+	   block.style.width = 50 + "px";
+       block.style.height = 50 + "px";
+	   block.style.background = 'red';
+	   block.innerHTML = i++;
+	   game.insertBefore(block,null);
+}
+  f();
+  f();
+  
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
